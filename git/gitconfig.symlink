@@ -1,0 +1,16 @@
+[color]
+	ui = true
+	diff = auto
+	status = auto
+	branch = auto
+[user]
+	name = Brad Burns
+	email = bburns@burnix.org
+[credential]
+	helper = cache
+[alias]
+	co = checkout
+	count = !git shortlog -sn
+[core]
+	editor = vim
+
