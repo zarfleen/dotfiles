@@ -11,6 +11,7 @@ alias dir='ls -1'
 alias mem="free -m"
 alias screen="TERM=xterm screen"
 alias ssha="ssh-add"
+alias sshd="ssh-add -d"
 
 # command L equivalent to command |less
 alias -g L='|less' 
