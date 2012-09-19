@@ -19,3 +19,21 @@ alias -g L='|less'
 # command S equivalent to command &> /dev/null &
 alias -g S='&> /dev/null &'
 
+# Push and pop directories on directory stack
+alias pu='pushd'
+alias po='popd'
+
+# Basic directory operations
+alias ...='cd ../..'
+alias -- -='cd -'
+
+# Super user
+alias _='sudo'
+
+# Show history
+alias history='fc -l 1'
+
+alias sl=ls # often screw this up
+
+alias afind='ack-grep -il'
+
