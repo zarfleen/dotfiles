@@ -57,6 +57,7 @@ set noexpandtab
 
 set autoindent
 set smartindent
+set backspace=indent,eol,start
 
 set number
 
@@ -96,4 +97,8 @@ set statusline=%{GitBranchInfoString()}\ %2*%<[%4*%F%2*]\ %h%3*%m%4*%r%=%2*[%1*T
 
 set laststatus=2
 
-let g:netrw_home=$HOME.'/.vim'
+" put swap/undo/temp files to home directory (double slash to use unique file names)
+silent! call map(['swap', 'undo'], 'mkdir($HOME."/.vim-temp/".v:val, "p")')
+set backupdir=~/.vim-temp/swap// noswapfile undodir=~/.vim-temp/undo// undofile undolevels=1000
+let g:netrw_home=$HOME.'/.vim-temp'
+
