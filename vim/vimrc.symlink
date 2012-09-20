@@ -96,3 +96,4 @@ set statusline=%{GitBranchInfoString()}\ %2*%<[%4*%F%2*]\ %h%3*%m%4*%r%=%2*[%1*T
 
 set laststatus=2
 
+let g:netrw_home=$HOME.'/.vim'
