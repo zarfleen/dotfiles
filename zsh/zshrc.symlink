@@ -1,7 +1,12 @@
 ZSH=$HOME/.dotfiles
 
 # Customize to your needs...
-export PATH="$PATH:/home/bradb/bin:/home/bradb/.dotfiles/bin:/home/bradb/devel/android-sdk-linux/platform-tools:/home/bradb/devel/android-sdk-linux/tools"
+
+if [[ "$UID" -ne 0 ]]
+then
+	export PATH="$PATH:/home/bradb/bin:/home/bradb/.dotfiles/bin:/home/bradb/devel/android-sdk-linux/platform-tools:/home/bradb/devel/android-sdk-linux/tools"
+fi
+
 export EDITOR=vim
 export HISTFILE=~/.zsh_history
 export HISTSIZE=50000

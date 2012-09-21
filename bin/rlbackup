@@ -8,8 +8,8 @@
 # Just fill in the next 3 configuration values - that's it :)
 
 SOURCE=/home/bradb/
-DESTPATH=/data1/bradb/Backups
-EXCLUDEFILE=/data1/bradb/Backups/rlbackup_exclude.txt
+DESTPATH=/mnt/data1/bradb/Backups
+EXCLUDEFILE=/mnt/data1/bradb/Backups/rlbackup_exclude.txt
 
 # === Usage ===
 #

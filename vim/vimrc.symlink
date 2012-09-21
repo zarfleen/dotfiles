@@ -1,6 +1,6 @@
 " Source a global configuration file if available
-if filereadable("/etc/vim/vimrc")
-  source /etc/vim/vimrc
+if filereadable("/etc/vimrc")
+  source /etc/vimrc
 endif
 
 set nocompatible		" be iMproved!
@@ -44,11 +44,13 @@ filetype plugin indent on	" required!
 
 """"""""""""""""""""""""""""""""""""""""""
 
-if &term == "linux" || &term == "screen" || &term == "screen-256color"
+if &term == "linux" || &term == "screen" || &term == "screen-256color" 
 	set t_Co=256
 endif
 
 colorscheme molokai 
+
+syntax on
 
 set tabstop=4
 set softtabstop=4
