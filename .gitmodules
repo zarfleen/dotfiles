@@ -1,4 +1,16 @@
 [submodule "vundle"]
 	path = vim/vim.symlink/bundle/vundle
 	url = git://github.com/gmarik/vundle.git
+[submodule "Git-Branch-Info"]
+	path = vim/vim.symlink/bundle/Git-Branch-Info
+	url = git://github.com/vim-scripts/Git-Branch-Info.git
+[submodule "neocomplcache"]
+	path = vim/vim.symlink/bundle/neocomplcache
+	url = git://github.com/Shougo/neocomplcache.git
+[submodule "vim-colorschemes"]
+	path = vim/vim.symlink/bundle/vim-colorschemes
+	url = git://github.com/flazz/vim-colorschemes.git
+[submodule "vim-fugitive"]
+	path = vim/vim.symlink/bundle/vim-fugitive
+	url = git://github.com/tpope/vim-fugitive.git
 
