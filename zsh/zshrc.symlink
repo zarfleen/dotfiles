@@ -4,7 +4,7 @@ ZSH=$HOME/.dotfiles
 
 if [[ "$UID" -ne 0 ]]
 then
-	export PATH="$PATH:/home/bradb/bin:/home/bradb/.dotfiles/bin:/home/bradb/devel/android-sdk-linux/platform-tools:/home/bradb/devel/android-sdk-linux/tools"
+	export PATH="$PATH:/home/bradb/.dotfiles/bin"
 fi
 
 export EDITOR=vim
