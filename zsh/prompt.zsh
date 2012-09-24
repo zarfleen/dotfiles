@@ -34,7 +34,8 @@ setprompt () {
 	fi	
 
 	# Check if we are on SSH or not
-	if [[ -n "$SSH_CLIENT"  ||  -n "$SSH2_CLIENT" ]]; then 
+	if [[ -n "$SSH_CLIENT"  ||  -n "$SSH2_CLIENT" || -n "$SSH_CONNECTION" ]]
+	then 
 		eval PR_HOST='${PR_LIGHT_YELLOW}%M${PR_NO_COLOR}' #SSH
 	else 
 		eval PR_HOST='${PR_LIGHT_BLUE}%M${PR_NO_COLOR}' # no SSH
