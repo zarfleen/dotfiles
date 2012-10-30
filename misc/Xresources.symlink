@@ -1,0 +1,17 @@
+URxvt.termName:		xterm-256color
+URxvt.transparent:	true	
+URxvt.shading:		10	
+URxvt.depth:		32
+URxvt.background:	black	
+URxvt.scrollBar:	false
+URxvt.scrollstyle:	rxvt
+URxvt.saveLines:	5000
+URxvt.font: 		xft:Monaco:style=Regular:pixelsize=12:antialias=true
+URxvt.perl-ext-common:	default,matcher
+URxvt.urlLauncher:	/usr/bin/google-chrome
+URxvt.matcher.button:	1
+URxvt.foreground:	white	
+URxvt.geometry:		120x40
+
+#include "/home/bradb/.colors/256-gr3y"
+
