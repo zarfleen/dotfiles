@@ -1,10 +1,23 @@
 ZSH=$HOME/.dotfiles
 
 # Customize to your needs...
+export UNAME_SYSTEM=`uname -s`
+
+if [[ "$UNAME_SYSTEM" == "Darwin" ]]
+then
+	export OSX=1
+else
+	export OSX=0
+fi
 
 if [[ "$UID" -ne 0 ]]
 then
 	export PATH="$PATH:/home/bradb/.dotfiles/bin"
+fi
+
+if [[ OSX -eq 1 ]]
+then
+	export PATH="$PATH:/opt/local/bin"
 fi
 
 export EDITOR=vim
@@ -12,7 +25,11 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=50000
 export SAVEHIST=50000
 export LOCAL_PACKAGE_SOURCES=~/Packages
-eval `dircolors -b`
+
+if [[ OSX -eq 0 ]]
+then
+	eval `dircolors -b`
+fi
 
 [[ "$TERM" == "xterm" ]] && export TERM=xterm-256color
 

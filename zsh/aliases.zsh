@@ -2,7 +2,14 @@ alias reload!='. ~/.zshrc'
 alias grep="grep --color=auto"
 alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
-alias ls='ls --color=auto -F'
+
+if [[ $OSX -eq 0 ]]
+then
+	alias ls='ls --color=auto -F'
+else
+	alias ls='ls -FG'
+fi
+
 alias lsd='ls -ld *(-/DN)'
 alias lsa='ls -ld .*'
 alias f='find |grep'
