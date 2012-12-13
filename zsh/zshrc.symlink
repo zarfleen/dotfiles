@@ -12,7 +12,7 @@ fi
 
 if [[ "$UID" -ne 0 ]]
 then
-	export PATH="$PATH:/home/bradb/.dotfiles/bin"
+	export PATH="$PATH:$HOME/.dotfiles/bin"
 fi
 
 if [[ OSX -eq 1 ]]
