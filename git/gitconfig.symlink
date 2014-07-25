@@ -5,7 +5,7 @@
 	branch = true
 [user]
 	name = Brad Burns
-	email = bradb@velsol.com
+	email = bburns@burnix.org 
 [credential]
 	helper = cache
 [alias]
