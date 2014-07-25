@@ -24,11 +24,8 @@ Bundle 'tpope/vim-fugitive'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Bundle 'tpope/vim-rails.git'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'taq/vim-git-branch-info'
 
-" vim-scripts repos
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
-Bundle 'Git-Branch-Info'
 
 filetype plugin on			" required!
 filetype plugin indent on	" required!
