@@ -5,7 +5,7 @@
 	branch = true
 [user]
 	name = Brad Burns
-	email = brad.burns@velsol.com 
+	email = bburns@burnix.org 
 [credential]
 	helper = cache
 [alias]
@@ -45,3 +45,7 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+
+[include]
+	path = ~/.gitconfig.local
+
