@@ -3,17 +3,22 @@
 	diff = true 
 	status = true
 	branch = true
+	
 [user]
 	name = Brad Burns
 	email = bburns@burnix.org 
+
 [credential]
 	helper = cache
+
 [alias]
 	count = !git shortlog -sn
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
 	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
 	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
 	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short --decorate
+	lp = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	filelog = log -u
 	fl = log -u
 	dl = "!git ll -1"
@@ -36,15 +41,16 @@
 	br = branch 
 	diff = diff --word-diff
 	dc = diff --cached
+
 [core]
 	editor = vim
 
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+[merge]
+	tool = opendiff
+
+[mergetool "diffmerge"]
+	cmd = "opendiff --merge --result=\"$MERGED\" \"$LOCAL\" \"$(if test -f \"$BASE\"; then echo \"$BASE\"; else echo \"$LOCAL\"; fi)\" \"$REMOTE\""
+    trustExitCode = false
 
 [include]
 	path = ~/.gitconfig.local
