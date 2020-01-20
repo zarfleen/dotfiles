@@ -9,9 +9,7 @@ set -g base-index 1
 set -s escape-time 0
 
 # Set status bar
-set -g status-bg blue
-set -g status-fg white
-set -g status-attr bright
+set -g status-style bg=blue,fg=white,bright
 set -g status-left "#H"
 set -g status-right "#(uptime | cut -d ":" -f 5-)"
 
@@ -25,7 +23,7 @@ setw -g monitor-activity on
 set -g visual-activity on
 
 # Highlight active window
-set-window-option -g window-status-current-bg red
+set-window-option -g window-status-current-style bg=red
 
 # Bind | and - to window splitting
 unbind %
