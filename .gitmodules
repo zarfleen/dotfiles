@@ -12,4 +12,4 @@
 	url = git://github.com/Lokaltog/vim-powerline.git
 [submodule "vim.symlink/bundle/vim-git-branch-info"]
 	path = vim/vim.symlink/bundle/vim-git-branch-info
-	url = git://.github.com/taq/vim-git-branch-info.git
+	url = git://github.com/taq/vim-git-branch-info.git
